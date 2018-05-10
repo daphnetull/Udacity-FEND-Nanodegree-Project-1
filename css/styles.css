@@ -24,7 +24,6 @@ a {
   text-decoration: none;
 }
 
-
 /* MAIN STYLES */
 
 body {
@@ -110,14 +109,14 @@ nav.open {
 .intro {
   width: 80%;
   margin: auto;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   background-color: rgba(0, 0, 51, .93);
   padding: 20px;
 }
 
 .main-logo {
-  border-bottom: solid 2px #FFF;
+  border-bottom: solid 2px #fff;
   padding-bottom: 15px;
 }
 
@@ -169,7 +168,7 @@ textarea {
   border: 0;
   padding: .7em;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
 }
 
 input:focus,
