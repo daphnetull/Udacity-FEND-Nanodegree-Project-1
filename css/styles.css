@@ -48,7 +48,6 @@ h2 {
 	justify-content: space-between;
 	overflow: hidden;
 	position: relative;
-	z-index: 1;
 	border-bottom: solid 2px black;
 	width: 90%;
 	margin: auto;
