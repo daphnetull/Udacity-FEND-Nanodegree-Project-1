@@ -1,79 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Daphne's Portfolio</title>
-	<link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-<body>
-	<header class="main-header">
-		<div class="main-heading">
-			<h1>Daphne Tull</h1>
-			<h2>Front-End Developer</h2>
-		</div>
-		<div class="menu-icon">
-			<i class="fas fa-bars"></i>
-		</div>
-		<nav class="mobile-nav">
-			<ul class="mobile-nav-list">
-				<li class="nav-list-item"><a href="#" class="nav-link">About</a></li>
-				<li class="nav-list-item"><a href="#" class="nav-link">Portfolio</a></li>
-				<li class="nav-list-item"><a href="#" class="nav-link">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="hero-area">
-		<div class="intro">
-			<p>Hi, I'm Daphne.</p>
-			<p>I'm an aspiring front-end web developer from Indianapolis, Indiana.</p>
-			<p>I'm passionate about making clean and beautiful websites.</p>
-			<p>Check out some of my work below!</p>
-		</div>
-	</div>
-	<div class="featured-work">
-		<h2>Featured Work</h2>
-		<figure>
-			<img src="img/project-one.jpg" alt="project one" class="project-image">
-			<figcaption class="project-caption">Project One</figcaption>
-		</figure>
-		<figure>
-			<img src="img/project-two.jpg" alt="project two" class="project-image">
-			<figcaption class="project-caption">Project Two</figcaption>
-		</figure>
-		<figure>
-			<img src="img/project-three.jpg" alt="project three" class="project-image">
-			<figcaption class="project-caption">Project Three</figcaption>
-		</figure>
-	</div>
-	<div class="contact-me">
-		<h2 class="contact-me-header">I would <i class="far fa-heart"></i> to hear from you!</h2>
-		<form class="contact-form">
-			<p>
-	        	<input type="text" id="name-input" name="subject" placeholder="Your Name" required>
-	      	</p>
-	      	<p>
-	        	<input type="email" id="email-input" name="email" placeholder="Your Email" required>
-	      	</p>
-	      	<p>
-	        	<textarea id="message" name="tellme" placeholder="Type your message here..."></textarea>
-	      	</p>
-	        <button type="submit" name="submit" class="submit-button">Send</button>
-		</form>
-	</div>
-	<footer>
-		<div class="social-icons">
-			<i class="fab fa-github"></i>
-			<i class="fab fa-facebook-f"></i>
-			<i class="fab fa-twitter"></i>
-		</div>
-		<p class="copyright">Copyright 2018 / Daphne Tull</p>
-	</footer>
-	<script type="text/javascript" src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daphne's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-heading">
+        <h1>Daphne Tull</h1>
+        <h2>Front-End Developer</h2>
+      </div>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="nav-list-item nav-list-border"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-list-item nav-list-border"><a href="#featured-work" class="nav-link">Portfolio</a></li>
+          <li class="nav-list-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero-area">
+      <div class="intro" id="about">
+        <div class="main-logo">
+          <img src="img/udacity.svg" class="logo-image" alt="udacity logo">
+        </div>
+        <div class="intro-text">
+          <p>Hi, I'm Daphne.</p>
+          <p>I'm an aspiring front-end web developer from Indianapolis, Indiana.</p>
+          <p>I'm passionate about making clean and beautiful websites.</p>
+          <p>Check out some of my work below!</p>
+        </div>
+      </div>
+    </div>
+    <div class="featured-work" id="featured-work">
+      <h1>Featured Work</h1>
+      <ul class="featured-work-list">
+        <li class="featured-item">
+          <figure>
+            <img src="img/project-one.jpg" alt="project one" class="project-image">
+            <figcaption class="project-caption">Project One</figcaption>
+          </figure>
+        </li>
+        <li class="featured-item">
+          <figure>
+            <img src="img/project-two.jpg" alt="project two" class="project-image">
+            <figcaption class="project-caption">Project Two</figcaption>
+          </figure>
+        </li>
+        <li class="featured-item">
+          <figure>
+            <img src="img/project-three.jpg" alt="project three" class="project-image">
+            <figcaption class="project-caption">Project Three</figcaption>
+          </figure>
+        </li>
+        <li class="featured-item">
+          <figure>
+            <img src="img/project-four.jpg" alt="project four" class="project-image">
+            <figcaption class="project-caption">Project Four</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-me" id="contact">
+      <h1 class="contact-me-header">I would <i class="far fa-heart"></i> to hear from you!</h1>
+      <form class="contact-form">
+        <p>
+          <input type="text" id="name-input" name="subject" placeholder="Your Name" required>
+        </p>
+        <p>
+          <input type="email" id="email-input" name="email" placeholder="Your Email" required>
+        </p>
+        <p>
+          <textarea id="message" name="tellme" placeholder="Your message to me..."></textarea>
+        </p>
+        <button type="submit" name="submit" class="submit-button">Send</button>
+      </form>
+    </div>
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="copyright">Copyright 2018 / Daphne Tull</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
